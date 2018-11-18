@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SchulteGrid</string>
+    <string name="app_main_start">Start</string>
+    <string name="app_main_menu">设置难度</string>
+</resources>

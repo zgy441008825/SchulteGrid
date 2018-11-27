@@ -49,6 +49,8 @@ public class MusicHelper {
 
     public static final String MUSIC_KEY_RIGHT = "right";
     public static final String MUSIC_KEY_ERROT = "error";
+    public static final String MUSIC_KEY_GAME_OVER_COIN = "gameOverCoin";
+    public static final String MUSIC_KEY_GAME_WIN = "gameWin";
 
     public static MusicHelper getInstance() {
         return instance;
@@ -58,19 +60,20 @@ public class MusicHelper {
         soundPool = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
         soundMap.put(MUSIC_KEY_RIGHT, soundPool.load(x.app(), R.raw.right, 1));
         soundMap.put(MUSIC_KEY_ERROT, soundPool.load(x.app(), R.raw.error, 1));
+        soundMap.put(MUSIC_KEY_GAME_OVER_COIN, soundPool.load(x.app(), R.raw.game_over_coin, 1));
+        soundMap.put(MUSIC_KEY_GAME_WIN, soundPool.load(x.app(), R.raw.game_over_win, 1));
         prepareGameBg();
-//        Flowable.create((FlowableOnSubscribe<Void>) emitter -> {
-//            emitter.requested();
-//
-//            emitter.onNext(null);
-//        }, BackpressureStrategy.BUFFER)
-//                .subscribeOn(Schedulers.newThread())
-//                .subscribe();
     }
 
     public void play(String key) {
         if (soundMap.containsKey(key) && soundMap.get(key) != null) {
             soundPool.play(soundMap.get(key), 1, 1, 1, 0, 1);
+        }
+    }
+
+    public void play(String key, int loop) {
+        if (soundMap.containsKey(key) && soundMap.get(key) != null) {
+            soundPool.play(soundMap.get(key), 1, 1, 1, loop, 1);
         }
     }
 

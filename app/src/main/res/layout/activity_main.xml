@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img_game_bg_l"
+    android:gravity="center"
     android:orientation="vertical"
-    android:padding="8dp">
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/mainRvGrid"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp">
+
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_margin="20dp"/>
-    <Button
-        android:id="@+id/mainBtStart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/bt_start"/>
-</RelativeLayout>
+        android:onClick="onSchulteOnClick"
+        android:text="25"
+        android:textSize="24sp"/>
+
+</LinearLayout>

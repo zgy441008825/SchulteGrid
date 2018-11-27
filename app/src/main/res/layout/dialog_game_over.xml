@@ -35,8 +35,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="40dp"
+        android:text="@string/app_name"
         android:textColor="@color/grid_item_right"
-        android:textSize="22sp"/>
+        android:textSize="40sp"/>
 
     <Button
         android:id="@+id/mainBtStart"

@@ -14,5 +14,11 @@
         android:onClick="onSchulteOnClick"
         android:text="25"
         android:textSize="24sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startNumberActivity"
+        android:text="Number"
+        android:textSize="24sp"/>
 
 </LinearLayout>

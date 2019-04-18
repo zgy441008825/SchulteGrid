@@ -2,4 +2,7 @@
     <string name="app_name">SchulteGrid</string>
     <string name="app_main_start">Start</string>
     <string name="app_main_menu">设置难度</string>
+    <string name="quxian">曲线</string>
+    <string name="settings_long_name">曲线_longName</string>
+    <string name="settings_short_name">曲线_short</string>
 </resources>

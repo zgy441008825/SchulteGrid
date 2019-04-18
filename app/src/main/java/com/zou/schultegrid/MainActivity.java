@@ -2,10 +2,11 @@ package com.zou.schultegrid;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 
 import com.zou.schultegrid.sound.MusicHelper;
+import com.zou.schultegrid.view.activity.NumberActivity;
 import com.zou.schultegrid.view.activity.SchulteActivity;
 
 /**
@@ -38,6 +39,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void onSchulteOnClick(View view) {
         startActivity(new Intent(this, SchulteActivity.class));
+    }
+
+    public void startNumberActivity(View view) {
+        startActivity(new Intent(this, NumberActivity.class));
     }
 
 }
